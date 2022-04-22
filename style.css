@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Tahoma;
+    
+}
+header{
+    text-align: center;
+    background-color: #F63232 ;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+header>h1{
+    color: white;
+    border: 8px solid white;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 36px;
+}
+.banner{
+    position: relative;
+  }
+
+.banner img{
+    width: 100%;
+}
+.nav{
+    position: sticky;
+    top:10%;
+    background-color: #f4f4f4;
+    z-index: 1;
+    padding:20px;
+   
+}
+.nav ul{
+    text-align: center;
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.nav ul li{
+    list-style-type: none;   
+    display: inline-block;
+    font-size: 24px;
+    width: 25%;
+     
+}
+.nav li .ilk-a{
+    color: red;
+}
+.nav li a{
+    text-decoration:none;
+    color: black;
+}
+
+.nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.kapsayan{
+    box-sizing: border-box;
+    margin: 80px auto;
+    max-width: 100%;
+    width: 1200px;
+    padding: 0 40px;
+   
+}
+.first-p{
+    color: red;
+    font-size: 3REM;
+    
+}
+.second-p{
+    color: #b4b4b4;
+    line-height: 32px;
+}
+.second-p::first-line{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.ikinci{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+    list-style-type: none;
+    }
+.ikinci li{
+    display: inline-block;
+    list-style-type: none;
+    width: 40%;
+    margin: 20px 5%;
+    position: relative;
+}
+.ikinci li:hover{
+    top: -4px;
+}
+.ikinci li img{
+    width: 90%;
+}
+#join{
+    color: #4B4B4B;
+    background-color: #f4f4f4;
+    padding: 60px 20px ;
+    text-align: center 
+}
+#join h2{
+    font-size: 36px;
+}
+#lorem{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 10px;
+}
+.gönder form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid white;
+
+}
+form input:focus{
+    border: 4px dashed #4B4B4B;
+    outline: none;
+  }
+#submit {
+    cursor: pointer;
+  }
+form input:valid{
+    border: 4px solid #71d300;
+  }
+
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: red ;
+   
+}
+
+@media(max-width: 770px){
+    .banner{
+        font-size: 20px;
+        position: relative;
+        text-align: center;
+    }
+    .ikinci li{
+        width: 100%;
+        display: block;
+        margin: 20px auto;
+        transition: 1s;
+    }
+    .nav ul li{
+        font-size: 18px;
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        
+    }
+
+}
+@media  screen and(max-width:560px ) {
+    .banner{
+        font-size: 20px;
+        position: relative;
+        text-align: center;
+    }
+    .nav ul li{
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
+    header, .nav{
+        position: relative;
+        top: 0;
+      }
+
+}
